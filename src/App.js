@@ -22,10 +22,10 @@ function App() {
 
   const pickWordAndCategory = () => {
     const categories = Object.keys(words);
-    const category = categories[Math.floor(Math.randow() * Object.keys(categories).length)];
-  
-    const word = words[category][Math.floor(Math.randow() * words[category].length)]
-    return { word, category }
+    const category = categories[Math.floor(Math.random() * Object.keys(categories).length)];
+
+    const word = words[category][Math.floor(Math.random() * words[category].length)];
+    return { word, category };
   }
 
   const startGame = () => {
@@ -33,7 +33,7 @@ function App() {
 
     let wordLetter = word.split("");
 
-    wordLetter = wordLetter.map((i) => i.toLowerCase())
+    wordLetter = wordLetter.map((i) => i.toLowerCase());
 
     setPickedWord(word);
     setPickedCategory(category);
@@ -43,7 +43,7 @@ function App() {
   };
 
   const verifyLetter = () => {
-    setGameStage(stages[2].name)
+    setGameStage(stages[2].name);
   }
 
   const retry = () => {
