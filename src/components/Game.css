@@ -1,5 +1,5 @@
 .game h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 
 .point span {
@@ -17,7 +17,8 @@
     display: flex;
 }
 
-.letter, .blankSquare {
+.letter,
+.blankSquare {
     font-size: 70px;
     line-height: 1.5;
     border: 3px solid #000;
@@ -45,4 +46,11 @@
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
+}
+
+@media screen and (max-width: 576px) {
+
+    .wordContainer {
+        width: 15em;
+    }
 }
