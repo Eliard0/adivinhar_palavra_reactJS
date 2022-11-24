@@ -49,6 +49,7 @@ function App() {
     setLetters(wordLetter);
 
     setGameStage(stages[1].name);
+    
   }, [pickedCategory]);
 
   const verifyLetter = (letter) => {
